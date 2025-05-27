@@ -1,0 +1,129 @@
+import Link from "next/link"
+import { Github, Linkedin, Twitter, ExternalLink } from "lucide-react"
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear()
+  
+  return (
+    <footer className="bg-muted/30 py-12 border-t">
+      <div className="container max-w-5xl">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="md:col-span-2">
+            <Link href="#home" className="flex items-center space-x-2">
+              <span className="text-xl font-bold bg-gradient-to-r from-amber-500 via-yellow-500 to-green-500 bg-clip-text text-transparent">
+                Dev Portfolio
+              </span>
+            </Link>
+            <p className="mt-4 text-muted-foreground">
+              Creating beautiful, functional, and user-friendly applications is my passion.
+              Let's work together to bring your ideas to life.
+            </p>
+            <div className="flex space-x-4 mt-6">
+              <a 
+                href="https://github.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-card hover:bg-primary/10 transition-colors"
+                aria-label="GitHub"
+              >
+                <Github className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://linkedin.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-card hover:bg-primary/10 transition-colors"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://twitter.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-2 rounded-full bg-card hover:bg-primary/10 transition-colors"
+                aria-label="Twitter"
+              >
+                <Twitter className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+          
+          <div>
+            <h3 className="text-sm font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="#home" className="text-muted-foreground hover:text-primary transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="#skills" className="text-muted-foreground hover:text-primary transition-colors">
+                  Skills
+                </Link>
+              </li>
+              <li>
+                <Link href="#projects" className="text-muted-foreground hover:text-primary transition-colors">
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-sm font-semibold mb-4">Contact</h3>
+            <ul className="space-y-2">
+              <li className="text-muted-foreground">
+                San Francisco, California
+              </li>
+              <li>
+                <a 
+                  href="mailto:contact@example.com" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  contact@example.com
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="tel:+11234567890" 
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  +1 (123) 456-7890
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-sm text-muted-foreground">
+            © {currentYear} Jane Developer. All rights reserved.
+          </p>
+          <div className="flex items-center mt-4 md:mt-0">
+            <a 
+              href="https://github.com/username/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center"
+            >
+              View this site's code <ExternalLink className="ml-1 h-3 w-3" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}
+
+export default Footer
