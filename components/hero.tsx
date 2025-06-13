@@ -30,7 +30,7 @@ const Hero = () => {
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
                 <span className="block">Hi, I'm</span>
                 <span className="bg-gradient-to-r from-amber-500 via-yellow-500 to-green-500 bg-clip-text text-transparent">
-                  Jane Developer
+                  Samuel Sean
                 </span>
               </h1>
             </motion.div>
@@ -65,7 +65,7 @@ const Hero = () => {
               transition={{ duration: 0.5, delay: 0.6 }}
             >
               <a 
-                href="https://github.com" 
+                href="https://github.com/unseanted" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-card hover:bg-primary/10 transition-colors"
@@ -83,7 +83,7 @@ const Hero = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a 
-                href="https://twitter.com" 
+                href="https://twitter.com/xinbadt" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-card hover:bg-primary/10 transition-colors"

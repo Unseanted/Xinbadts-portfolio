@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <Link href="#home" className="flex items-center space-x-2">
               <span className="text-xl font-bold bg-gradient-to-r from-amber-500 via-yellow-500 to-green-500 bg-clip-text text-transparent">
-                Dev Portfolio
+                Sean's Portfolio
               </span>
             </Link>
             <p className="mt-4 text-muted-foreground">
@@ -20,7 +20,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4 mt-6">
               <a 
-                href="https://github.com" 
+                href="https://github.com/unseanted" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-card hover:bg-primary/10 transition-colors"
@@ -38,7 +38,7 @@ const Footer = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a 
-                href="https://twitter.com" 
+                href="https://twitter.com/xinbadt" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-card hover:bg-primary/10 transition-colors"
@@ -84,22 +84,22 @@ const Footer = () => {
             <h3 className="text-sm font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
               <li className="text-muted-foreground">
-                San Francisco, California
+                Jos, Plateau State, Nigeria
               </li>
               <li>
                 <a 
-                  href="mailto:contact@example.com" 
+                  href="mailto:sinbad4u007@yahoo.com" 
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  contact@example.com
+                  sinbad4u007@yahoo.com
                 </a>
               </li>
               <li>
                 <a 
-                  href="tel:+11234567890" 
+                  href="tel:+2348031153839" 
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
-                  +1 (123) 456-7890
+                  +234 (0) 8031153839
                 </a>
               </li>
             </ul>
@@ -108,11 +108,11 @@ const Footer = () => {
         
         <div className="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Jane Developer. All rights reserved.
+            © {currentYear} Samuel Sean. All rights reserved.
           </p>
           <div className="flex items-center mt-4 md:mt-0">
             <a 
-              href="https://github.com/username/portfolio"
+              href="https://github.com/unseanted/xinbadts-portfolio"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center"

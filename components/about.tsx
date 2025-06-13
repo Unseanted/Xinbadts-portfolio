@@ -10,7 +10,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 animate-fade-in">
             <p className="text-lg">
-              I'm a passionate Software Engineer with over 5 years of experience crafting
+              I'm a passionate Software Engineer with over 2 years of experience crafting
               beautiful, functional applications. I specialize in building responsive web
               applications using modern technologies like React, Next.js, and Node.js.
             </p>
@@ -34,25 +34,25 @@ const About = () => {
                   <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-primary/20 text-primary mr-3">
                     •
                   </span>
-                  <span>Based in San Francisco, California</span>
+                  <span>Based in Jos, Plateau State, Nigeria</span>
                 </li>
                 <li className="flex items-start">
                   <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-primary/20 text-primary mr-3">
                     •
                   </span>
-                  <span>Master's in Computer Science</span>
+                  <span>Certified ALX Software Engineer</span>
                 </li>
                 <li className="flex items-start">
                   <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-primary/20 text-primary mr-3">
                     •
                   </span>
-                  <span>5+ years professional experience</span>
+                  <span>2+ years professional experience</span>
                 </li>
                 <li className="flex items-start">
                   <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-primary/20 text-primary mr-3">
                     •
                   </span>
-                  <span>Worked with Fortune 500 companies</span>
+                  <span>BlueHouse Technologies</span>
                 </li>
                 <li className="flex items-start">
                   <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-primary/20 text-primary mr-3">

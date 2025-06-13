@@ -12,8 +12,8 @@ const Skills = () => {
     frontend: [
       { name: "React", level: 90 },
       { name: "Next.js", level: 85 },
-      { name: "TypeScript", level: 80 },
-      { name: "CSS/Tailwind", level: 90 },
+      { name: "TypeScript", level: 70 },
+      { name: "CSS/Tailwind", level: 80 },
       { name: "HTML/JSX", level: 95 },
     ],
     backend: [
@@ -27,7 +27,7 @@ const Skills = () => {
       { name: "Git/GitHub", level: 90 },
       { name: "Docker", level: 75 },
       { name: "CI/CD", level: 70 },
-      { name: "AWS", level: 65 },
+      { name: "AWS", level: 55 },
       { name: "Testing", level: 80 },
     ],
     soft: [
@@ -41,9 +41,8 @@ const Skills = () => {
   
   const technologies = [
     "JavaScript", "TypeScript", "React", "Next.js", "Node.js", 
-    "Express", "MongoDB", "PostgreSQL", "GraphQL", "REST API", 
-    "Tailwind CSS", "Material UI", "Git", "GitHub", "Docker", 
-    "AWS", "Vercel", "Jest", "React Testing Library", "Figma"
+    "Express", "MongoDB", "PostgreSQL", "REST API", 
+    "Tailwind CSS", "Git", "GitHub", "Docker", "Vercel", "Jest", "React Testing Library",
   ]
 
   return (

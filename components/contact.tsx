@@ -74,8 +74,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-sm font-medium">Email</h4>
-                    <a href="mailto:contact@example.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                      contact@example.com
+                    <a href="mailto:sinbad4u007@yahoo.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                      sinbad4u007@yahoo.com
                     </a>
                   </div>
                 </div>
@@ -86,8 +86,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="text-sm font-medium">Phone</h4>
-                    <a href="tel:+11234567890" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                      +1 (123) 456-7890
+                    <a href="tel:+2348031153839" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                      +234 (0)8031153839
                     </a>
                   </div>
                 </div>
@@ -99,7 +99,7 @@ const Contact = () => {
                   <div>
                     <h4 className="text-sm font-medium">Location</h4>
                     <p className="text-sm text-muted-foreground">
-                      San Francisco, California
+                      Jos, Plateau
                     </p>
                   </div>
                 </div>
@@ -109,7 +109,7 @@ const Contact = () => {
                 <h4 className="text-sm font-medium mb-3">Connect on Social Media</h4>
                 <div className="flex space-x-3">
                   <a 
-                    href="https://github.com" 
+                    href="https://github.com/unseanted" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-card hover:bg-primary/10 p-2 rounded-full transition-colors"
@@ -120,7 +120,7 @@ const Contact = () => {
                     </svg>
                   </a>
                   <a 
-                    href="https://linkedin.com" 
+                    href="https://linkedin.com/samuel-sean"
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-card hover:bg-primary/10 p-2 rounded-full transition-colors"
@@ -133,7 +133,7 @@ const Contact = () => {
                     </svg>
                   </a>
                   <a 
-                    href="https://twitter.com" 
+                    href="https://twitter.com/xinbadt" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-card hover:bg-primary/10 p-2 rounded-full transition-colors"
