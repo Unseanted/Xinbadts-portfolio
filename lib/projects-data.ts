@@ -1,6 +1,7 @@
 import recipeImage from "@/components/images/recipe.jpg";
 import bluehouseImage from "@/components/images/blueouse.jpg";
 import scholarImage from "@/components/images/scholar.jpg";
+import afrikImage from "@/components/images/afrik.jpg";
 import { StaticImageData } from "next/image";
 
 export type Project = {
@@ -73,6 +74,16 @@ export const projects: Project[] = [
     tags: ["React", "API Integration", "Responsive Design", "Filtering Algorithm"],
     githubUrl: "https://github.com/unseanted/recipe-finder",
     demoUrl: "https://recipe-finder-beryl.vercel.app/",
+    featured: false,
+  },
+  {
+    id: "project-7",
+    title: "Learning Management System",
+    description: "A learning Management system for learners across Africa. Allows users to learn,engage, grow, develop, contribute to forums and content performance across platforms.",
+    image: "afrikImage.jpg",
+    tags: ["React", "vite", "Node.js", "MongoDB", "API Integration"],
+    githubUrl: "https://github.com/unseanted/african-intelligence",
+    demoUrl: "https://africanintelligence.tech",
     featured: false,
   },
 ];
