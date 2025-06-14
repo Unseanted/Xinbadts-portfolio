@@ -91,7 +91,7 @@ export const projects: Project[] = [
     title: "Kobo App",
     description: "A finance mobile app built with AI",
     image: "afrikImage.jpg",
-    tags: ["React", "vite", "Supabase", "API Integration"],
+    tags: ["React", "vite", "Supabase", "TypeScript", "Tailwind CSS", "API Integration"],
     githubUrl: "https://github.com/Unseanted/kobo-shop-finance-hub",
     demoUrl: "",
     featured: false,
