@@ -86,4 +86,14 @@ export const projects: Project[] = [
     demoUrl: "https://africanintelligence.tech",
     featured: false,
   },
+  {
+    id: "project-8",
+    title: "Kobo App",
+    description: "A finance mobile app built with AI",
+    image: "afrikImage.jpg",
+    tags: ["React", "vite", "Supabase", "API Integration"],
+    githubUrl: "https://github.com/Unseanted/kobo-shop-finance-hub",
+    demoUrl: "",
+    featured: false,
+  },
 ];
