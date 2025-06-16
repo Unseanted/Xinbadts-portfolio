@@ -1,7 +1,11 @@
 import recipeImage from "@/components/images/recipe.jpg";
-import bluehouseImage from "@/components/images/blueouse.jpg";
+import bluehouseImage from "@/components/images/bluehouse.jpg";
+import softwareImage from "@/components/images/software.jpg";
 import scholarImage from "@/components/images/scholar.jpg";
 import afrikImage from "@/components/images/afrik.jpg";
+import mashira from "@/components/images/mashira.jpg";
+import ace from "@/components/images/ace.jpg";
+import kobo from "@/components/images/kobo.jpg";
 import { StaticImageData } from "next/image";
 
 export type Project = {
@@ -50,7 +54,7 @@ export const projects: Project[] = [
     id: "project-4",
     title: "Portfolio Website",
     description: "A modern portfolio website built with Next.js and Tailwind CSS. Features responsive design, dark mode, and animated transitions.",
-    image: "https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: softwareImage,
     tags: ["Next.js", "Tailwind CSS", "TypeScript", "Responsive Design"],
     githubUrl: "https://github.com/unseanted/xinbadts-portfolio",
     demoUrl: "https://portfolio-demo.example.com",
@@ -80,8 +84,8 @@ export const projects: Project[] = [
     id: "project-7",
     title: "Learning Management System",
     description: "A learning Management system for learners across Africa. Allows users to learn,engage, grow, develop, contribute to forums and content performance across platforms.",
-    image: "afrikImage.jpg",
-    tags: ["React", "vite", "Node.js", "MongoDB", "API Integration"],
+    image: afrikImage,
+    tags: ["React", "vite", "Node.js", "MongoDB", "API Integration", "google-oauth"],
     githubUrl: "https://github.com/unseanted/african-intelligence",
     demoUrl: "https://africanintelligence.tech",
     featured: false,
@@ -90,9 +94,29 @@ export const projects: Project[] = [
     id: "project-8",
     title: "Kobo App",
     description: "A finance mobile app built with AI",
-    image: "afrikImage.jpg",
+    image: kobo,
     tags: ["React", "vite", "Supabase", "TypeScript", "Tailwind CSS", "API Integration"],
     githubUrl: "https://github.com/Unseanted/kobo-shop-finance-hub",
+    demoUrl: "",
+    featured: false,
+  },
+  {
+    id: "project-9",
+    title: "Mashira travel App",
+    description: "A travel application for users to book hotels, and cars. It also allows users to view the weather of the destination they are traveling to.",
+    image: mashira,
+    tags: ["React", "vite", "Supabase", "TypeScript", "Tailwind CSS", "API Integration"],
+    githubUrl: "https://github.com/Unseanted/mashira-glow",
+    demoUrl: "",
+    featured: false,
+  },
+  {
+    id: "project-10",
+    title: "ace tickets",
+    description: "A ticket booking application for events and concerts",
+    image: ace,
+    tags: ["React", "MongoDB", "TypeScript", "Tailwind CSS", "API Integration"],
+    githubUrl: "https://github.com/Unseanted/ace-tickets",
     demoUrl: "",
     featured: false,
   },

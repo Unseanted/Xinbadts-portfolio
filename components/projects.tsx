@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { projects } from "@/lib/projects-data"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -98,11 +99,13 @@ const Projects = () => {
 const ProjectCard = ({ project }) => {
   return (
     <Card className="overflow-hidden card-hover-effect h-full flex flex-col">
-      <div className="h-48 overflow-hidden">
-        <img
+      <div className="h-48 overflow-hidden relative">
+        <Image
           src={project.image}
           alt={project.title}
-          className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+          fill
+          className="object-cover transition-transform duration-500 hover:scale-110"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
       
