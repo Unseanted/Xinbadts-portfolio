@@ -1,11 +1,11 @@
-import recipeImage from "@/components/images/recipe.jpg";
-import bluehouseImage from "@/components/images/bluehouse.jpg";
-import softwareImage from "@/components/images/software.jpg";
-import scholarImage from "@/components/images/scholar.jpg";
-import afrikImage from "@/components/images/afrik.jpg";
-import mashira from "@/components/images/mashira.jpg";
-import ace from "@/components/images/ace.jpg";
-import kobo from "@/components/images/kobo.jpg";
+import recipeImage from "/images/recipe.jpg";
+import bluehouseImage from "/images/bluehouse.jpg";
+import softwareImage from "/images/software.JPG";
+import scholarImage from "/images/scholar.jpg";
+import afrikImage from "/images/afrik.jpg";
+import mashira from "/images/mashira.JPG";
+import ace from "/images/ace.jpg";
+import kobo from "/images/kobo.JPG";
 import { StaticImageData } from "next/image";
 
 export type Project = {
