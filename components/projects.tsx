@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { projects } from "@/lib/projects-data"
+import { projects, Project } from "@/lib/projects-data"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -96,7 +96,7 @@ const Projects = () => {
   )
 }
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <Card className="overflow-hidden card-hover-effect h-full flex flex-col">
       <div className="h-48 overflow-hidden relative">
