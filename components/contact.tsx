@@ -20,8 +20,6 @@ const formSchema = z.object({
 })
 
 const Contact = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -31,24 +29,6 @@ const Contact = () => {
       message: "",
     },
   })
-
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    setIsSubmitting(true)
-    
-    try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500))
-      
-      console.log(values)
-      toast.success("Message sent successfully! I'll get back to you soon.")
-      form.reset()
-    } catch (error) {
-      toast.error("Failed to send message. Please try again.")
-      console.error(error)
-    } finally {
-      setIsSubmitting(false)
-    }
-  }
 
   return (
     <section id="contact" className="section-padding">
@@ -153,7 +133,20 @@ const Contact = () => {
               <h3 className="text-xl font-semibold mb-6">Send Me a Message</h3>
               
               <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                <form
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  action="/success"
+                  className="space-y-6"
+                >
+                  <input type="hidden" name="form-name" value="contact" />
+                  <p className="hidden">
+                    <label>
+                      Don't fill this out if you're human: <input name="bot-field" />
+                    </label>
+                  </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <FormField
                       control={form.control}
@@ -216,23 +209,12 @@ const Contact = () => {
                     )}
                   />
                   
-                  <Button 
-                    type="submit" 
-                    className="w-full md:w-auto bg-primary hover:bg-primary/90"
-                    disabled={isSubmitting}
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                        Sending...
-                      </>
-                    ) : (
-                      <>
-                        <Send className="mr-2 h-4 w-4" />
-                        Send Message
-                      </>
-                    )}
-                  </Button>
+                  <div>
+                    <Button type="submit" className="w-full">
+                      <Send className="h-4 w-4 mr-2" />
+                      Send Message
+                    </Button>
+                  </div>
                 </form>
               </Form>
             </Card>
