@@ -10,14 +10,12 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 animate-fade-in">
             <p className="text-lg">
-              I'm a passionate Software Engineer with over 2 years of experience crafting
-              beautiful, functional applications. I specialize in building responsive web
-              applications using modern technologies like React, Next.js, and Node.js.
+              Results-driven Software Engineer with 3+ years of experience designing and developing responsive, user-centric web applications. Proficient in modern JavaScript frameworks and tools including React, Next.js, and Node.js.
+              Passionate about building scalable solutions that balance functionality with elegant UI/UX design.
             </p>
             <p className="text-lg">
-              My journey in software development began during my university years, where I
-              discovered my passion for turning ideas into code. Since then, I've worked
-              with various teams and clients to deliver high-quality software solutions.
+              My software development journey began during my university years, where I discovered a passion for transforming ideas into functional code.
+              Since then, I’ve collaborated with diverse teams and clients to deliver high-quality, reliable software solutions that drive real-world impact.
             </p>
             <p className="text-lg">
               When I'm not coding, you can find me exploring new technologies, contributing
@@ -46,7 +44,7 @@ const About = () => {
                   <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-primary/20 text-primary mr-3">
                     •
                   </span>
-                  <span>2+ years professional experience</span>
+                  <span>3+ years professional experience</span>
                 </li>
                 <li className="flex items-start">
                   <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-primary/20 text-primary mr-3">
