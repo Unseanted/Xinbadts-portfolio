@@ -40,9 +40,9 @@ const Skills = () => {
   }
   
   const technologies = [
-    "JavaScript", "TypeScript", "React", "Next.js", "Node.js", 
-    "Express", "MongoDB", "PostgreSQL", "REST API", 
-    "Tailwind CSS", "Git", "GitHub", "Docker", "Vercel", "Jest", "React Testing Library",
+    "C", "JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Python", 
+    "Express", "MongoDB", "PostgreSQL", "REST API", "Shadcn", "SmoothieUI", "ChakraUI", 
+    "Tailwind CSS", "Git", "GitHub", "Docker", "Vercel", "Jest", "React Testing Library", "DevOps", "CI/CD",
   ]
 
   return (

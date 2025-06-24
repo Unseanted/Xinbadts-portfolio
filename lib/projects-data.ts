@@ -85,7 +85,7 @@ export const projects: Project[] = [
   {
     id: "project-8",
     title: "Kobo App",
-    description: "A finance mobile app built with AI",
+    description: "A finance/e-commerce mobile app built with AI",
     image: "/images/kobo.JPG",
     tags: ["React", "vite", "Supabase", "TypeScript", "Tailwind CSS", "API Integration"],
     githubUrl: "https://github.com/Unseanted/kobo-shop-finance-hub",

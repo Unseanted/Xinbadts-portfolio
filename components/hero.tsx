@@ -83,11 +83,11 @@ const Hero = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a 
-                href="https://twitter.com/xinbadt" 
+                href="https://x.com/xinbadt" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-card hover:bg-primary/10 transition-colors"
-                aria-label="Twitter"
+                aria-label="X"
               >
                 <Twitter className="h-5 w-5" />
               </a>

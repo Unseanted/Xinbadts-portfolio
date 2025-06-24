@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="container flex h-16 items-center justify-between">
         <Link href="#home" className="flex items-center space-x-2">
           <span className="text-xl font-bold bg-gradient-to-r from-amber-500 via-yellow-500 to-green-500 bg-clip-text text-transparent">
-            Software Engineer
+            Welcome - You are here!
           </span>
         </Link>
 
@@ -91,10 +91,10 @@ const Navbar = () => {
               <Link href="https://github.com/unseanted" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
               </Link>
-              <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <Link href="https://x.com/xinbadt" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5" />
               </Link>
-              <Link href="mailto:sinbad4u007@yahoo.com.com">
+              <Link href="mailto:sinbad4u007@yahoo.com">
                 <Mail className="h-5 w-5" />
               </Link>
             </div>

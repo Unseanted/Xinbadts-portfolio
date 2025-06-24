@@ -31,8 +31,8 @@ const Projects = () => {
           <h2 className="text-3xl font-bold mb-4">My Projects</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-amber-500 via-yellow-500 to-green-500 mx-auto mb-6"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Here's a collection of my recent projects. Each one represents different
-            challenges and solutions I've worked on.
+            Here's a collection of some of my recent projects. Each one represents different
+            challenges and solutions I've worked on. Explore!
           </p>
         </div>
         
