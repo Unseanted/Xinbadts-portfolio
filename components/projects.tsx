@@ -12,6 +12,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all")
+  const [activeTab, setActiveTab] = useState("featured")
   
   const featuredProjects = projects.filter(project => project.featured)
   const allProjects = projects
@@ -36,7 +37,7 @@ const Projects = () => {
           </p>
         </div>
         
-        <Tabs defaultValue="featured" className="w-full mb-8">
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full mb-8">
           <div className="flex justify-center">
             <TabsList>
               <TabsTrigger value="featured">Featured</TabsTrigger>
@@ -66,7 +67,10 @@ const Projects = () => {
               <Button
                 variant={activeFilter === "all" ? "default" : "outline"}
                 size="sm"
-                onClick={() => setActiveFilter("all")}
+                onClick={() => {
+                  setActiveFilter("all");
+                  setActiveTab("filter");
+                }}
                 className={activeFilter === "all" ? "bg-primary" : ""}
               >
                 All
@@ -77,8 +81,15 @@ const Projects = () => {
                   key={tag}
                   variant={activeFilter === tag ? "default" : "outline"}
                   size="sm"
-                  onClick={() => setActiveFilter(tag)}
-                  className={activeFilter === tag ? "bg-primary" : ""}
+                  onClick={() => {
+                    setActiveFilter(tag);
+                    setActiveTab("filter");
+                  }}
+                  className={
+                    activeFilter === tag
+                      ? "bg-primary text-white font-bold border border-primary"
+                      : ""
+                  }
                 >
                   {tag}
                 </Button>
