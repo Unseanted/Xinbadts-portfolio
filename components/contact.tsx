@@ -79,7 +79,7 @@ const Contact = () => {
                   <div>
                     <h4 className="text-sm font-medium">Location</h4>
                     <p className="text-sm text-muted-foreground">
-                      Jos, Plateau
+                      Jos, Plateau State.
                     </p>
                   </div>
                 </div>
@@ -130,7 +130,7 @@ const Contact = () => {
           
           <div className="md:col-span-3">
             <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-6">Send Me a Message</h3>
+              <h3 className="text-xl font-semibold mb-6">Reach me with a text here on</h3>
               
               <Form {...form}>
                 <form
