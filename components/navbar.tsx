@@ -91,7 +91,7 @@ const Navbar = () => {
               <Link href="https://github.com/unseanted" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
               </Link>
-              <Link href="https://x.com/xinbadt" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.linkedin.com/in/samuel-sean/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5" />
               </Link>
               <Link href="mailto:sinbad4u007@yahoo.com">

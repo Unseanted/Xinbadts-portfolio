@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import { Button } from "./ui/button"
 import { ArrowDown, Github, Linkedin, Twitter } from "lucide-react"
 import { motion } from "@/lib/motion-wrapper"
@@ -28,7 +29,7 @@ const Hero = () => {
               transition={{ duration: 0.5 }}
             >
               <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-                <span className="block">Hi, I'm</span>
+                <span className="block">Hi, I&apos;m</span>
                 <span className="bg-gradient-to-r from-amber-500 via-yellow-500 to-green-500 bg-clip-text text-transparent">
                   Samuel Sean
                 </span>
@@ -74,7 +75,7 @@ const Hero = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/samuel-sean/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-card hover:bg-primary/10 transition-colors"
@@ -101,10 +102,13 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20">
-              <img 
-                src="https://images.pexels.com/photos/5483077/pexels-photo-5483077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-                alt="Profile" 
-                className="object-cover w-full h-full"
+              <Image
+                src="/images/software.JPG" 
+                alt="Samuel Sean" 
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 768px) 288px, 320px"
               />
             </div>
           </motion.div>

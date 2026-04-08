@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod"
@@ -30,6 +29,36 @@ const Contact = () => {
     },
   })
 
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      const payload = await response.json();
+
+      if (!response.ok) {
+        throw new Error(payload.error || 'Failed to send message');
+      }
+
+      toast.success('Message sent successfully!', {
+        description: "I'll get back to you as soon as possible.",
+      });
+      form.reset();
+    } catch (error) {
+      toast.error('Failed to send message', {
+        description:
+          error instanceof Error
+            ? error.message
+            : "Please try again later or contact me directly via email.",
+      });
+    }
+  }
+
   return (
     <section id="contact" className="section-padding">
       <div className="container max-w-5xl">
@@ -38,7 +67,7 @@ const Contact = () => {
           <div className="w-20 h-1 bg-gradient-to-r from-amber-500 via-yellow-500 to-green-500 mx-auto mb-6"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Have a project in mind or want to discuss potential opportunities? Feel free to
-            reach out. I'm always open to new challenges and collaborations.
+            reach out. I&apos;m always open to new challenges and collaborations.
           </p>
         </div>
         
@@ -130,23 +159,13 @@ const Contact = () => {
           
           <div className="md:col-span-3">
             <Card className="p-6">
-              <h3 className="text-xl font-semibold mb-6">Reach me with a text here on</h3>
+              <h3 className="text-xl font-semibold mb-6">Send a message</h3>
               
               <Form {...form}>
                 <form
-                  name="contact"
-                  method="POST"
-                  data-netlify="true"
-                  netlify-honeypot="bot-field"
-                  action="/success"
+                  onSubmit={form.handleSubmit(onSubmit)}
                   className="space-y-6"
                 >
-                  <input type="hidden" name="form-name" value="contact" />
-                  <p className="hidden">
-                    <label>
-                      Don't fill this out if you're human: <input name="bot-field" />
-                    </label>
-                  </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <FormField
                       control={form.control}
@@ -210,9 +229,18 @@ const Contact = () => {
                   />
                   
                   <div>
-                    <Button type="submit" className="w-full">
-                      <Send className="h-4 w-4 mr-2" />
-                      Send Message
+                    <Button type="submit" className="w-full" disabled={form.formState.isSubmitting}>
+                      {form.formState.isSubmitting ? (
+                        <>
+                          <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+                          Sending...
+                        </>
+                      ) : (
+                        <>
+                          <Send className="h-4 w-4 mr-2" />
+                          Send Message
+                        </>
+                      )}
                     </Button>
                   </div>
                 </form>

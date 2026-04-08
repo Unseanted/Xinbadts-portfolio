@@ -11,12 +11,12 @@ const Footer = () => {
           <div className="md:col-span-2">
             <Link href="#home" className="flex items-center space-x-2">
               <span className="text-xl font-bold bg-gradient-to-r from-amber-500 via-yellow-500 to-green-500 bg-clip-text text-transparent">
-                Sean's Portfolio
+                Sean&apos;s Portfolio
               </span>
             </Link>
             <p className="mt-4 text-muted-foreground">
               Creating beautiful, functional, and user-friendly applications is my passion.
-              Let's work together to bring your ideas to life.
+              Let&apos;s work together to bring your ideas to life.
             </p>
             <div className="flex space-x-4 mt-6">
               <a 
@@ -29,7 +29,7 @@ const Footer = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/samuel-sean/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-card hover:bg-primary/10 transition-colors"
@@ -117,7 +117,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center"
             >
-              View this site's code <ExternalLink className="ml-1 h-3 w-3" />
+              View this site&apos;s code <ExternalLink className="ml-1 h-3 w-3" />
             </a>
           </div>
         </div>

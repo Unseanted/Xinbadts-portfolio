@@ -18,7 +18,7 @@ const About = () => {
               Since then, I’ve collaborated with diverse teams and clients to deliver high-quality, reliable software solutions that drive real-world impact.
             </p>
             <p className="text-lg">
-              When I'm not coding, you can find me exploring new technologies, contributing
+              When I&apos;m not coding, you can find me exploring new technologies, contributing
               to open-source projects, or enjoying outdoor activities to maintain a healthy
               work-life balance.
             </p>
