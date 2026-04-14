@@ -1,8 +1,58 @@
 # Xinbadts Portfolio
 
-Personal portfolio built with Next.js 13, TypeScript, Tailwind CSS, and shadcn/ui.
+A modern personal portfolio built with Next.js 13, TypeScript, Tailwind CSS, and shadcn/ui.
 
-## Local development
+## Overview
+
+This app showcases Samuel Sean's profile, experience, tech stack, and selected projects in a one-page layout with smooth section navigation and a working contact form.
+
+Sections rendered on the home page:
+
+- `Hero`
+- `About`
+- `Skills`
+- `Projects`
+- `Contact`
+
+Main app entry points:
+
+- `app/layout.tsx` - global shell (navbar, theme provider, footer, toasts)
+- `app/page.tsx` - homepage section composition
+- `app/api/contact/route.ts` - email delivery endpoint for contact form submissions
+
+## Design System
+
+The interface follows a clean, warm, professional style with:
+
+- **Primary palette:** amber (`--primary`)
+- **Secondary palette:** green (`--secondary`)
+- **Accent palette:** yellow (`--accent`)
+- **Mode support:** light + dark themes (system-aware)
+- **Visual language:** gradient headings, rounded cards, subtle shadows, smooth motion, section-based scrolling
+
+Theme tokens and shared styles are defined in `app/globals.css`.
+
+## Tech Stack
+
+- Next.js 13 (App Router)
+- React 18
+- TypeScript
+- Tailwind CSS
+- shadcn/ui + Radix UI primitives
+- React Hook Form + Zod
+- Sonner (toast notifications)
+- Nodemailer (SMTP contact form backend)
+
+## Local Development
+
+### Prerequisites
+
+- Node.js `20.x` or `22.x` (required)
+- npm
+
+Do not use Node `25.x` with this project.
+
+### Start the app
 
 ```bash
 nvm use
@@ -10,11 +60,19 @@ npm install
 npm run dev
 ```
 
-Use Node `20.x` or `22.x`. The project does not support Node `25.x`.
+Open [http://localhost:3000](http://localhost:3000).
 
-## Required environment variables
+### Quality checks
 
-Copy `.env.example` to `.env.local` and set:
+```bash
+npm run typecheck
+npx eslint . --ext .js,.jsx,.ts,.tsx
+npm run build
+```
+
+## Environment Variables
+
+Create `.env.local` from `.env.example` and provide:
 
 - `EMAIL_SERVER_HOST`
 - `EMAIL_SERVER_PORT`
@@ -22,18 +80,41 @@ Copy `.env.example` to `.env.local` and set:
 - `EMAIL_SERVER_PASS`
 - `CONTACT_TO_EMAIL`
 
-The contact form posts to `app/api/contact/route.ts` and sends email through your SMTP provider.
+These are used by `app/api/contact/route.ts` to send form submissions through your SMTP provider.
 
-## Deploying to Vercel
+## Deployment (Vercel)
 
-1. Import the repository into Vercel.
-2. Set the framework preset to `Next.js` if Vercel does not auto-detect it.
-3. Set the project Node.js version to `20.x` or `22.x` if Vercel does not inherit it from `package.json`.
-4. Add the environment variables from `.env.example`.
-5. Deploy with:
+1. Import this repository into Vercel.
+2. Keep the framework preset as `Next.js`.
+3. Ensure Node.js runtime is `20.x` or `22.x`.
+4. Add all environment variables listed above.
+5. Deploy from dashboard or CLI:
 
 ```bash
 vercel
 ```
 
-Or let Vercel build automatically from your connected Git repository.
+## Build Notes
+
+- `next.config.js` includes `swcMinify: false` for build stability.
+- `next.config.js` also allows external images from `images.pexels.com`.
+
+## Project Structure
+
+```text
+app/
+  api/contact/route.ts
+  layout.tsx
+  page.tsx
+  success/page.tsx
+components/
+  hero.tsx
+  about.tsx
+  skills.tsx
+  projects.tsx
+  contact.tsx
+  navbar.tsx
+  footer.tsx
+lib/
+  projects-data.ts
+```
