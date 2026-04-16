@@ -1,4 +1,4 @@
-# Xinbadts Portfolio
+# Samuel Sean
 
 A modern personal portfolio built with Next.js 13, TypeScript, Tailwind CSS, and shadcn/ui.
 
