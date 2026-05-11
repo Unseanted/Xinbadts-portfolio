@@ -27,7 +27,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="section-padding bg-muted/30">
-      <div className="container max-w-6xl">
+      <div className="app-container">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold mb-4">My Projects</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-amber-500 via-yellow-500 to-green-500 mx-auto mb-6"></div>
@@ -47,7 +47,7 @@ const Projects = () => {
           </div>
           
           <TabsContent value="featured" className="animate-fade-in mt-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {featuredProjects.map((project) => (
                 <ProjectCard key={project.id} project={project} />
               ))}
@@ -55,7 +55,7 @@ const Projects = () => {
           </TabsContent>
           
           <TabsContent value="all" className="animate-fade-in mt-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {allProjects.map((project) => (
                 <ProjectCard key={project.id} project={project} />
               ))}
@@ -96,7 +96,7 @@ const Projects = () => {
               ))}
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredProjects.map((project) => (
                 <ProjectCard key={project.id} project={project} />
               ))}

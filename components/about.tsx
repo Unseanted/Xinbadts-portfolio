@@ -1,14 +1,14 @@
 const About = () => {
   return (
     <section id="about" className="section-padding bg-muted/30">
-      <div className="container max-w-5xl">
+      <div className="app-container">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-amber-500 via-yellow-500 to-green-500 mx-auto"></div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div className="space-y-6 animate-fade-in">
+          <div className="space-y-6 animate-fade-in text-left md:text-center">
             <p className="text-lg">
               Results-driven Software Engineer with 3+ years of experience designing and developing responsive, user-centric web applications. Proficient in modern JavaScript frameworks and tools including React, Next.js, and Node.js.
               Passionate about building scalable solutions that balance functionality with elegant UI/UX design.

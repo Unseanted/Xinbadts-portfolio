@@ -61,7 +61,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="section-padding">
-      <div className="container max-w-5xl">
+      <div className="app-container">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-amber-500 via-yellow-500 to-green-500 mx-auto mb-6"></div>
@@ -71,8 +71,8 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-          <div className="md:col-span-2 space-y-6">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+          <div className="lg:col-span-2 space-y-6 text-left">
             <Card className="p-6">
               <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
               
@@ -157,7 +157,7 @@ const Contact = () => {
             </Card>
           </div>
           
-          <div className="md:col-span-3">
+          <div className="lg:col-span-3 text-left">
             <Card className="p-6">
               <h3 className="text-xl font-semibold mb-6">Send a message</h3>
               
@@ -166,7 +166,7 @@ const Contact = () => {
                   onSubmit={form.handleSubmit(onSubmit)}
                   className="space-y-6"
                 >
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <FormField
                       control={form.control}
                       name="name"

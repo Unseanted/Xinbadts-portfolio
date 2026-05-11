@@ -20,7 +20,7 @@ const Hero = () => {
       id="home" 
       className="relative pt-24 md:pt-32 pb-16 md:pb-24 flex flex-col items-center justify-center min-h-screen"
     >
-      <div className="container max-w-5xl">
+      <div className="app-container">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
           <div className="md:col-span-3 space-y-6">
             <motion.div

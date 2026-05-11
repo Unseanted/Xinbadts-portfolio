@@ -38,7 +38,7 @@ const Navbar = () => {
           : "bg-transparent"
       )}
     >
-      <div className="container flex h-16 items-center justify-between">
+      <div className="app-container flex h-16 items-center justify-between">
         <Link href="#home" className="flex items-center space-x-2">
           <span className="text-xl font-bold bg-gradient-to-r from-amber-500 via-yellow-500 to-green-500 bg-clip-text text-transparent">
             Welcome - You are here!
@@ -76,7 +76,7 @@ const Navbar = () => {
       {/* Mobile navigation */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="container py-4 flex flex-col space-y-4 bg-background">
+          <div className="app-container py-4 flex flex-col space-y-4 bg-background">
             {navLinks.map((link) => (
               <Link
                 key={link.href}

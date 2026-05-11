@@ -21,7 +21,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex min-h-screen flex-col">
             <Navbar />
-            <main className="flex-1">{children}</main>
+            <main className="flex-1 text-center">{children}</main>
             <Footer />
           </div>
           <Toaster richColors position="top-right" />

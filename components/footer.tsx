@@ -6,7 +6,7 @@ const Footer = () => {
   
   return (
     <footer className="bg-muted/30 py-12 border-t">
-      <div className="container max-w-5xl">
+      <div className="app-container text-left md:text-center">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <Link href="#home" className="flex items-center space-x-2">

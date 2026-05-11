@@ -47,7 +47,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="section-padding">
-      <div className="container max-w-5xl">
+      <div className="app-container">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold mb-4">Skills & Expertise</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-amber-500 via-yellow-500 to-green-500 mx-auto"></div>
@@ -89,7 +89,7 @@ const Skills = () => {
           
           {Object.entries(skills).map(([category, categorySkills]) => (
             <TabsContent key={category} value={category} className="animate-fade-in">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-6 text-left">
                 {categorySkills.map((skill) => (
                   <div key={skill.name} className="space-y-2">
                     <div className="flex justify-between items-center">
