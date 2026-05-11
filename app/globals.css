@@ -18,63 +18,62 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    
-    /* Custom theme colors */
-    --primary: 43 96% 56%; /* Amber */
-    --primary-foreground: 0 0% 98%;
-    
-    --secondary: 142 72% 29%; /* Green */
-    --secondary-foreground: 0 0% 98%;
-    
-    --accent: 55 92% 58%; /* Yellow */
-    --accent-foreground: 0 0% 9%;
-    
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
+    --background: 347 24% 93%; /* #F2E9EB */
+    --foreground: 336 24% 14%;
+    --card: 347 24% 96%;
+    --card-foreground: 336 24% 14%;
+    --popover: 347 24% 96%;
+    --popover-foreground: 336 24% 14%;
+
+    /* Palette-driven theme colors */
+    --primary: 344 54% 71%; /* #DD8EA4 */
+    --primary-foreground: 336 22% 18%;
+
+    --secondary: 251 12% 82%; /* #CDCBD6 */
+    --secondary-foreground: 336 24% 14%;
+
+    --accent: 347 24% 93%; /* #F2E9EB */
+    --accent-foreground: 336 24% 14%;
+
+    --muted: 347 18% 90%;
+    --muted-foreground: 336 18% 28%;
     
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     
-    --border: 20 5.9% 90%;
-    --input: 20 5.9% 90%;
-    --ring: 43 96% 56%;
+    --border: 344 30% 80%;
+    --input: 344 24% 83%;
+    --ring: 344 54% 71%;
     
     --radius: 0.5rem;
   }
   
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    
-    /* Custom theme colors (dark mode) */
-    --primary: 43 96% 56%; /* Amber */
-    --primary-foreground: 0 0% 9%;
-    
-    --secondary: 142 70% 45%; /* Green - brighter for dark mode */
-    --secondary-foreground: 0 0% 9%;
-    
-    --accent: 55 92% 58%; /* Yellow */
-    --accent-foreground: 0 0% 9%;
-    
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
+    --background: 330 18% 10%;
+    --foreground: 347 24% 93%;
+    --card: 330 16% 14%;
+    --card-foreground: 347 24% 93%;
+    --popover: 330 16% 14%;
+    --popover-foreground: 347 24% 93%;
+
+    --primary: 344 54% 71%; /* #DD8EA4 */
+    --primary-foreground: 330 18% 10%;
+
+    --secondary: 251 12% 72%; /* darker variation of #CDCBD6 */
+    --secondary-foreground: 330 18% 10%;
+
+    --accent: 347 24% 86%; /* darker variation of #F2E9EB */
+    --accent-foreground: 330 18% 10%;
+
+    --muted: 330 14% 18%;
+    --muted-foreground: 347 14% 74%;
     
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     
-    --border: 20 5.9% 14.9%;
-    --input: 20 5.9% 14.9%;
-    --ring: 43 96% 56%;
+    --border: 344 18% 30%;
+    --input: 344 16% 28%;
+    --ring: 344 54% 71%;
   }
 }
 

@@ -4,7 +4,7 @@ const About = () => {
       <div className="app-container">
         <div className="text-center mb-10">
           <h2 className="text-3xl font-bold mb-4">About Me</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-amber-500 via-yellow-500 to-green-500 mx-auto"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary via-secondary to-primary mx-auto"></div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">

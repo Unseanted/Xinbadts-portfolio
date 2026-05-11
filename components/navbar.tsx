@@ -40,7 +40,7 @@ const Navbar = () => {
     >
       <div className="app-container flex h-16 items-center justify-between">
         <Link href="#home" className="flex items-center space-x-2">
-          <span className="text-xl font-bold bg-gradient-to-r from-amber-500 via-yellow-500 to-green-500 bg-clip-text text-transparent">
+          <span className="text-xl font-bold bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
             Welcome - You are here!
           </span>
         </Link>
