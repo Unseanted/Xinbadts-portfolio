@@ -103,7 +103,7 @@ const Hero = () => {
           >
             <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/20">
               <Image
-                src="/images/software.JPG" 
+                src="/images/profile.jpg" 
                 alt="Samuel Sean" 
                 fill
                 priority
