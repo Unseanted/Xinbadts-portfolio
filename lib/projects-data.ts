@@ -32,8 +32,18 @@ export const projects: Project[] = [
     demoUrl: "https://bluehouseng.com",
     featured: true,
   },
-  {
+   {
     id: "project-3",
+    title: "Learning Management System",
+    description: "A learning Management system for learners across Africa. Allows users to learn,engage, grow, develop, contribute to forums and content performance across platforms.",
+    image: "/images/afrik.jpg",
+    tags: ["React", "vite", "Node.js", "MongoDB", "API Integration", "google-oauth"],
+    githubUrl: "https://github.com/unseanted/african-intelligence",
+    demoUrl: "https://africanintelligence.tech",
+    featured: false,
+  },
+  {
+    id: "project-4",
     title: "Weather Dashboard",
     description: "An interactive weather application that provides real-time weather data, forecasts, and historical trends. Utilizes multiple weather APIs and data visualization.",
     image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -43,7 +53,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: "project-4",
+    id: "project-5",
     title: "Portfolio Website",
     description: "A modern portfolio website built with Next.js and Tailwind CSS. Features responsive design, dark mode, and animated transitions.",
     image: "/images/software.JPG",
@@ -53,7 +63,7 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: "project-5",
+    id: "project-6",
     title: "Social Media Analytics",
     description: "A data visualization tool for social media metrics. Allows users to track engagement, follower growth, and content performance across platforms.",
     image: "https://images.pexels.com/photos/7567460/pexels-photo-7567460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -63,23 +73,13 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    id: "project-6",
+    id: "project-7",
     title: "Recipe Finder App",
     description: "A mobile-responsive application that helps users find recipes based on ingredients they have on hand. Includes filtering by dietary restrictions and meal types.",
     image: "/images/recipe.jpg",
     tags: ["React", "API Integration", "Responsive Design", "Filtering Algorithm"],
     githubUrl: "https://github.com/unseanted/recipe-finder",
     demoUrl: "https://recipe-finder-beryl.vercel.app/",
-    featured: false,
-  },
-  {
-    id: "project-7",
-    title: "Learning Management System",
-    description: "A learning Management system for learners across Africa. Allows users to learn,engage, grow, develop, contribute to forums and content performance across platforms.",
-    image: "/images/afrik.jpg",
-    tags: ["React", "vite", "Node.js", "MongoDB", "API Integration", "google-oauth"],
-    githubUrl: "https://github.com/unseanted/african-intelligence",
-    demoUrl: "https://africanintelligence.tech",
     featured: false,
   },
   {
