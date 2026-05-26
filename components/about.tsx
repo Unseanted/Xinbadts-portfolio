@@ -10,7 +10,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 animate-fade-in text-left md:text-center">
             <p className="text-lg">
-              Results-driven Software Engineer with 3+ years of experience designing and developing responsive, user-centric web applications. Proficient in modern JavaScript frameworks and tools including React, Next.js, and Node.js.
+              Results-driven Software Engineer with 4+ years of experience designing and developing responsive, user-centric web applications. Proficient in modern JavaScript frameworks and tools including React, Next.js, and Node.js.
               Passionate about building scalable solutions that balance functionality with elegant UI/UX design.
             </p>
             <p className="text-lg">
@@ -44,7 +44,7 @@ const About = () => {
                   <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-primary/20 text-primary mr-3">
                     •
                   </span>
-                  <span>3+ years professional experience</span>
+                  <span>4+ years professional experience</span>
                 </li>
                 <li className="flex items-start">
                   <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-primary/20 text-primary mr-3">
