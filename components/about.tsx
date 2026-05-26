@@ -32,7 +32,7 @@ const About = () => {
                   <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-primary/20 text-primary mr-3">
                     •
                   </span>
-                  <span>Based in Jos, Plateau State, Nigeria</span>
+                  <span>Jos, Plateau State, Nigeria</span>
                 </li>
                 <li className="flex items-start">
                   <span className="inline-flex items-center justify-center h-6 w-6 rounded-full bg-primary/20 text-primary mr-3">
